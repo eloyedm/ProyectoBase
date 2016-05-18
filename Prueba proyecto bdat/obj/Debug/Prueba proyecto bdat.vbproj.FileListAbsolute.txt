@@ -42,3 +42,7 @@ C:\Users\eloye_000\Desktop\Facultad\Base datos\Proyecto\ProyectoBD\Prueba proyec
 C:\Users\eloye_000\Desktop\Facultad\Base datos\Proyecto\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
 C:\Users\eloye_000\Desktop\Facultad\Base datos\Proyecto\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
 C:\Users\eloye_000\Desktop\Facultad\Base datos\Proyecto\ProyectoBD\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe.config
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
