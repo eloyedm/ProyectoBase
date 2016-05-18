@@ -46,3 +46,22 @@ C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat
 C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.exe
 C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.xml
 C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.pdb
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.exe
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.pdb
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\bin\Debug\Prueba proyecto bdat.xml
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\bin\Debug\RMCCustomControls (2).dll
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbprojResolveAssemblyReference.cache
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeComercios.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpleado.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeEmpresas.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_CatalogoDeUsuarios.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frmInicio.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.FormCatUsu.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Depositar.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_InicioDeSesion.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Menu.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_Movimientos.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoDeTarjeta.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.frm_UsoTarjetaEmpresas.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba_proyecto_bdat.Resources.resources
+C:\Users\eloye_000\Desktop\Facultad\Base datos\ProyectoBase\Prueba proyecto bdat\obj\Debug\Prueba proyecto bdat.vbproj.GenerateResource.Cache
