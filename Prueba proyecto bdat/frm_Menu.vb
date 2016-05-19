@@ -27,4 +27,14 @@
     Private Sub frm_Menu_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Application.Exit()
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles btn_ReporteCo.Click
+        Me.Hide()
+        frmUsoDeTarjetaPC.Show()
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        Me.Hide()
+        frm_Movimientos.Show()
+    End Sub
 End Class

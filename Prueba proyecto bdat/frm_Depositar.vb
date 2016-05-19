@@ -61,6 +61,19 @@
             ConnectionModule.connection.NonQueryCommand("INSERT INTO Abono (idEmpleado, monto,fechaAbono)" &
                                                            " SELECT idEmpleado, '" & txtImporte.Text & "', GETDATE() FROM Empleado WHERE idEmpresa = '" & idSel & "'")
         End If
+        If ((rbIndi.Checked Or rbLibre.Checked) And txtImporte.Text <> "") Then
+            If (txtNombre.Text <> "") Then
+                Dim temp As DataTable =
+                ConnectionModule.connection.NonQueryCommand("INSERT INTO Abono (idEmpleado, monto,fechaAbono)" &
+                                                            " SELECT idEmpleado, '" & txtImporte.Text & "', GETDATE() FROM Empleado WHERE idEmpresa = '" & idSel & "' AND nombreEmpleado = '" & txtNombre.Text & "'")
+            End If
+        End If
     End Sub
 
+    Private Sub rbIndi_CheckedChanged(sender As Object, e As EventArgs) Handles rbIndi.CheckedChanged
+        If (rbIndi.Checked) Then
+            txtNombre.Enabled = True
+            txtNumero.Enabled = True
+        End If
+    End Sub
 End Class

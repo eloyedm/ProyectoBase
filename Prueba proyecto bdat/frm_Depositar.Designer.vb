@@ -97,7 +97,7 @@ Partial Class frm_Depositar
         Me.Label3.BackColor = System.Drawing.Color.Maroon
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label3.Location = New System.Drawing.Point(-1, 0)
+        Me.Label3.Location = New System.Drawing.Point(1, -4)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(567, 78)

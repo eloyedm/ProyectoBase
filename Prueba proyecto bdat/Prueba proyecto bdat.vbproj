@@ -74,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmUsoDeTarjetaPC.Designer.vb">
+      <DependentUpon>frmUsoDeTarjetaPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsoDeTarjetaPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_CatalogoDeComercios.Designer.vb">
       <DependentUpon>frm_CatalogoDeComercios.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="Validacion.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmUsoDeTarjetaPC.resx">
+      <DependentUpon>frmUsoDeTarjetaPC.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CatalogoDeComercios.resx">
       <DependentUpon>frm_CatalogoDeComercios.vb</DependentUpon>
     </EmbeddedResource>

@@ -52,7 +52,7 @@ Partial Class frm_CatalogoDeComercios
         'txtRFC
         '
         Me.txtRFC.Location = New System.Drawing.Point(20, 204)
-        Me.txtRFC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtRFC.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRFC.MaxLength = 20
         Me.txtRFC.Name = "txtRFC"
         Me.txtRFC.Size = New System.Drawing.Size(267, 22)
@@ -71,7 +71,7 @@ Partial Class frm_CatalogoDeComercios
         'txtRazonSocial
         '
         Me.txtRazonSocial.Location = New System.Drawing.Point(20, 108)
-        Me.txtRazonSocial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtRazonSocial.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRazonSocial.MaxLength = 100
         Me.txtRazonSocial.Name = "txtRazonSocial"
         Me.txtRazonSocial.Size = New System.Drawing.Size(768, 22)
@@ -90,7 +90,7 @@ Partial Class frm_CatalogoDeComercios
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(20, 156)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombre.MaxLength = 50
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(768, 22)
@@ -103,7 +103,7 @@ Partial Class frm_CatalogoDeComercios
         Me.dGridComercios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dGridComercios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Borrar})
         Me.dGridComercios.Location = New System.Drawing.Point(20, 241)
-        Me.dGridComercios.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dGridComercios.Margin = New System.Windows.Forms.Padding(4)
         Me.dGridComercios.Name = "dGridComercios"
         Me.dGridComercios.ReadOnly = True
         Me.dGridComercios.Size = New System.Drawing.Size(769, 356)
@@ -125,7 +125,7 @@ Partial Class frm_CatalogoDeComercios
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.ForeColor = System.Drawing.SystemColors.Control
         Me.btnAceptar.Location = New System.Drawing.Point(689, 206)
-        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(100, 28)
         Me.btnAceptar.TabIndex = 4
@@ -139,7 +139,7 @@ Partial Class frm_CatalogoDeComercios
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.Control
         Me.btnCancelar.Location = New System.Drawing.Point(581, 206)
-        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(100, 28)
         Me.btnCancelar.TabIndex = 5
@@ -160,7 +160,7 @@ Partial Class frm_CatalogoDeComercios
         'txtID
         '
         Me.txtID.Location = New System.Drawing.Point(300, 203)
-        Me.txtID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(4)
         Me.txtID.Name = "txtID"
         Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(80, 22)
@@ -210,7 +210,7 @@ Partial Class frm_CatalogoDeComercios
         Me.Controls.Add(Me.txtRFC)
         Me.Controls.Add(Me.lblRFC)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "frm_CatalogoDeComercios"
         Me.Text = "Comercios autorizados"

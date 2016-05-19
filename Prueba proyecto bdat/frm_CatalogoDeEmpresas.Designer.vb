@@ -31,6 +31,10 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.dgrid_Empresa = New System.Windows.Forms.DataGridView()
+        Me.idComercio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RCF = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RazonSocial = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dtpInicioDeOperaciones = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.gboxDomicilio = New System.Windows.Forms.GroupBox()
@@ -53,10 +57,6 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.idComercio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RCF = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RazonSocial = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgrid_Empresa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gboxDomicilio.SuspendLayout()
         Me.SuspendLayout()
@@ -74,7 +74,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtRFC
         '
         Me.txtRFC.Location = New System.Drawing.Point(16, 112)
-        Me.txtRFC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtRFC.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRFC.MaxLength = 13
         Me.txtRFC.Name = "txtRFC"
         Me.txtRFC.Size = New System.Drawing.Size(267, 22)
@@ -93,7 +93,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtRazonSocial
         '
         Me.txtRazonSocial.Location = New System.Drawing.Point(479, 112)
-        Me.txtRazonSocial.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtRazonSocial.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRazonSocial.MaxLength = 100
         Me.txtRazonSocial.Name = "txtRazonSocial"
         Me.txtRazonSocial.Size = New System.Drawing.Size(401, 22)
@@ -112,7 +112,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(16, 171)
-        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNombre.MaxLength = 50
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(189, 22)
@@ -132,7 +132,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtID
         '
         Me.txtID.Location = New System.Drawing.Point(51, 398)
-        Me.txtID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(4)
         Me.txtID.Name = "txtID"
         Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(65, 22)
@@ -144,17 +144,46 @@ Partial Class frm_CatalogoDeEmpresas
         Me.dgrid_Empresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgrid_Empresa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idComercio, Me.RCF, Me.RazonSocial, Me.Nombre})
         Me.dgrid_Empresa.Location = New System.Drawing.Point(17, 439)
-        Me.dgrid_Empresa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgrid_Empresa.Margin = New System.Windows.Forms.Padding(4)
         Me.dgrid_Empresa.Name = "dgrid_Empresa"
         Me.dgrid_Empresa.Size = New System.Drawing.Size(864, 272)
         Me.dgrid_Empresa.TabIndex = 8
+        '
+        'idComercio
+        '
+        Me.idComercio.DataPropertyName = "idEmpresa"
+        Me.idComercio.HeaderText = "ID"
+        Me.idComercio.Name = "idComercio"
+        Me.idComercio.ReadOnly = True
+        Me.idComercio.Visible = False
+        '
+        'RCF
+        '
+        Me.RCF.DataPropertyName = "RFC"
+        Me.RCF.HeaderText = "RFC"
+        Me.RCF.Name = "RCF"
+        Me.RCF.Width = 120
+        '
+        'RazonSocial
+        '
+        Me.RazonSocial.DataPropertyName = "razonSocial"
+        Me.RazonSocial.HeaderText = "Razon Social"
+        Me.RazonSocial.Name = "RazonSocial"
+        Me.RazonSocial.Width = 135
+        '
+        'Nombre
+        '
+        Me.Nombre.DataPropertyName = "nombreComercial"
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.Width = 120
         '
         'dtpInicioDeOperaciones
         '
         Me.dtpInicioDeOperaciones.CustomFormat = "yyyy-MM-dd"
         Me.dtpInicioDeOperaciones.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpInicioDeOperaciones.Location = New System.Drawing.Point(615, 167)
-        Me.dtpInicioDeOperaciones.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dtpInicioDeOperaciones.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpInicioDeOperaciones.Name = "dtpInicioDeOperaciones"
         Me.dtpInicioDeOperaciones.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.dtpInicioDeOperaciones.Size = New System.Drawing.Size(265, 22)
@@ -187,9 +216,9 @@ Partial Class frm_CatalogoDeEmpresas
         Me.gboxDomicilio.Controls.Add(Me.txtCalle)
         Me.gboxDomicilio.Controls.Add(Me.Label4)
         Me.gboxDomicilio.Location = New System.Drawing.Point(17, 215)
-        Me.gboxDomicilio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gboxDomicilio.Margin = New System.Windows.Forms.Padding(4)
         Me.gboxDomicilio.Name = "gboxDomicilio"
-        Me.gboxDomicilio.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gboxDomicilio.Padding = New System.Windows.Forms.Padding(4)
         Me.gboxDomicilio.Size = New System.Drawing.Size(864, 164)
         Me.gboxDomicilio.TabIndex = 5
         Me.gboxDomicilio.TabStop = False
@@ -198,7 +227,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtTelefono
         '
         Me.txtTelefono.Location = New System.Drawing.Point(415, 126)
-        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTelefono.MaxLength = 20
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(180, 22)
@@ -234,7 +263,7 @@ Partial Class frm_CatalogoDeEmpresas
         '
         Me.cbEstado.FormattingEnabled = True
         Me.cbEstado.Location = New System.Drawing.Point(75, 76)
-        Me.cbEstado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbEstado.Margin = New System.Windows.Forms.Padding(4)
         Me.cbEstado.Name = "cbEstado"
         Me.cbEstado.Size = New System.Drawing.Size(191, 24)
         Me.cbEstado.TabIndex = 4
@@ -253,7 +282,7 @@ Partial Class frm_CatalogoDeEmpresas
         '
         Me.cbMunicipio.FormattingEnabled = True
         Me.cbMunicipio.Location = New System.Drawing.Point(415, 76)
-        Me.cbMunicipio.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbMunicipio.Margin = New System.Windows.Forms.Padding(4)
         Me.cbMunicipio.Name = "cbMunicipio"
         Me.cbMunicipio.Size = New System.Drawing.Size(180, 24)
         Me.cbMunicipio.TabIndex = 5
@@ -271,7 +300,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtColonia
         '
         Me.txtColonia.Location = New System.Drawing.Point(657, 30)
-        Me.txtColonia.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtColonia.Margin = New System.Windows.Forms.Padding(4)
         Me.txtColonia.MaxLength = 50
         Me.txtColonia.Name = "txtColonia"
         Me.txtColonia.Size = New System.Drawing.Size(179, 22)
@@ -290,7 +319,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtNumero
         '
         Me.txtNumero.Location = New System.Drawing.Point(415, 30)
-        Me.txtNumero.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNumero.Margin = New System.Windows.Forms.Padding(4)
         Me.txtNumero.MaxLength = 10
         Me.txtNumero.Name = "txtNumero"
         Me.txtNumero.Size = New System.Drawing.Size(100, 22)
@@ -309,7 +338,7 @@ Partial Class frm_CatalogoDeEmpresas
         'txtCalle
         '
         Me.txtCalle.Location = New System.Drawing.Point(61, 30)
-        Me.txtCalle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCalle.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCalle.MaxLength = 50
         Me.txtCalle.Name = "txtCalle"
         Me.txtCalle.Size = New System.Drawing.Size(204, 22)
@@ -332,7 +361,7 @@ Partial Class frm_CatalogoDeEmpresas
         Me.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAgregar.ForeColor = System.Drawing.SystemColors.Control
         Me.btnAgregar.Location = New System.Drawing.Point(781, 404)
-        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(100, 28)
         Me.btnAgregar.TabIndex = 6
@@ -345,7 +374,7 @@ Partial Class frm_CatalogoDeEmpresas
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.Control
         Me.btnCancelar.Location = New System.Drawing.Point(653, 404)
-        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(100, 28)
         Me.btnCancelar.TabIndex = 7
@@ -376,35 +405,6 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Label10.Size = New System.Drawing.Size(999, 78)
         Me.Label10.TabIndex = 17
         '
-        'idComercio
-        '
-        Me.idComercio.DataPropertyName = "idEmpresa"
-        Me.idComercio.HeaderText = "ID"
-        Me.idComercio.Name = "idComercio"
-        Me.idComercio.ReadOnly = True
-        Me.idComercio.Visible = False
-        '
-        'RCF
-        '
-        Me.RCF.DataPropertyName = "RFC"
-        Me.RCF.HeaderText = "RFC"
-        Me.RCF.Name = "RCF"
-        Me.RCF.Width = 120
-        '
-        'RazonSocial
-        '
-        Me.RazonSocial.DataPropertyName = "razonSocial"
-        Me.RazonSocial.HeaderText = "Razon Social"
-        Me.RazonSocial.Name = "RazonSocial"
-        Me.RazonSocial.Width = 135
-        '
-        'Nombre
-        '
-        Me.Nombre.DataPropertyName = "nombreComercial"
-        Me.Nombre.HeaderText = "Nombre"
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.Width = 120
-        '
         'frm_CatalogoDeEmpresas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -426,7 +426,7 @@ Partial Class frm_CatalogoDeEmpresas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtRFC)
         Me.Controls.Add(Me.lblRFC)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frm_CatalogoDeEmpresas"
         Me.Text = "Empresas"
         CType(Me.dgrid_Empresa, System.ComponentModel.ISupportInitialize).EndInit()
