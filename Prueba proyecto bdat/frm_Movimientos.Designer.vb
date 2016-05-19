@@ -26,13 +26,16 @@ Partial Class frm_Movimientos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dtpfechaf = New System.Windows.Forms.DateTimePicker()
         Me.dtpfechai = New System.Windows.Forms.DateTimePicker()
-        Me.cmbEmpresa = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtTarjeta = New System.Windows.Forms.TextBox()
+        Me.dgridReporteMov = New System.Windows.Forms.DataGridView()
+        Me.btnGenerar = New System.Windows.Forms.Button()
+        Me.fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.monto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tarjetaVales = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.dgridReporteMov, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -60,7 +63,7 @@ Partial Class frm_Movimientos
         Me.dtpfechaf.Location = New System.Drawing.Point(461, 165)
         Me.dtpfechaf.Name = "dtpfechaf"
         Me.dtpfechaf.Size = New System.Drawing.Size(200, 22)
-        Me.dtpfechaf.TabIndex = 6
+        Me.dtpfechaf.TabIndex = 3
         '
         'dtpfechai
         '
@@ -69,16 +72,7 @@ Partial Class frm_Movimientos
         Me.dtpfechai.Location = New System.Drawing.Point(57, 165)
         Me.dtpfechai.Name = "dtpfechai"
         Me.dtpfechai.Size = New System.Drawing.Size(200, 22)
-        Me.dtpfechai.TabIndex = 5
-        '
-        'cmbEmpresa
-        '
-        Me.cmbEmpresa.FormattingEnabled = True
-        Me.cmbEmpresa.Location = New System.Drawing.Point(517, 36)
-        Me.cmbEmpresa.Margin = New System.Windows.Forms.Padding(4)
-        Me.cmbEmpresa.Name = "cmbEmpresa"
-        Me.cmbEmpresa.Size = New System.Drawing.Size(185, 24)
-        Me.cmbEmpresa.TabIndex = 16
+        Me.dtpfechai.TabIndex = 2
         '
         'Label3
         '
@@ -113,41 +107,76 @@ Partial Class frm_Movimientos
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "Número de tarjeta"
         '
-        'TextBox1
+        'txtTarjeta
         '
-        Me.TextBox1.Location = New System.Drawing.Point(260, 107)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(205, 22)
-        Me.TextBox1.TabIndex = 20
+        Me.txtTarjeta.Location = New System.Drawing.Point(250, 107)
+        Me.txtTarjeta.MaxLength = 16
+        Me.txtTarjeta.Name = "txtTarjeta"
+        Me.txtTarjeta.Size = New System.Drawing.Size(205, 22)
+        Me.txtTarjeta.TabIndex = 1
         '
-        'DataGridView1
+        'dgridReporteMov
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(57, 227)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(604, 181)
-        Me.DataGridView1.TabIndex = 21
+        Me.dgridReporteMov.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgridReporteMov.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.fecha, Me.monto, Me.tarjetaVales})
+        Me.dgridReporteMov.Location = New System.Drawing.Point(57, 264)
+        Me.dgridReporteMov.Name = "dgridReporteMov"
+        Me.dgridReporteMov.RowTemplate.Height = 24
+        Me.dgridReporteMov.Size = New System.Drawing.Size(604, 181)
+        Me.dgridReporteMov.TabIndex = 21
+        '
+        'btnGenerar
+        '
+        Me.btnGenerar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnGenerar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue
+        Me.btnGenerar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGenerar.ForeColor = System.Drawing.SystemColors.Control
+        Me.btnGenerar.Location = New System.Drawing.Point(561, 229)
+        Me.btnGenerar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnGenerar.Name = "btnGenerar"
+        Me.btnGenerar.Size = New System.Drawing.Size(100, 28)
+        Me.btnGenerar.TabIndex = 4
+        Me.btnGenerar.Text = "Generar"
+        Me.btnGenerar.UseVisualStyleBackColor = False
+        '
+        'fecha
+        '
+        Me.fecha.DataPropertyName = "fecha"
+        Me.fecha.HeaderText = "Fecha del movimiento"
+        Me.fecha.Name = "fecha"
+        '
+        'monto
+        '
+        Me.monto.DataPropertyName = "monto"
+        Me.monto.HeaderText = "Monto"
+        Me.monto.Name = "monto"
+        '
+        'tarjetaVales
+        '
+        Me.tarjetaVales.DataPropertyName = "tarjetaVales"
+        Me.tarjetaVales.HeaderText = "tarjeta"
+        Me.tarjetaVales.Name = "tarjetaVales"
+        Me.tarjetaVales.Visible = False
         '
         'frm_Movimientos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(724, 433)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(724, 457)
+        Me.Controls.Add(Me.btnGenerar)
+        Me.Controls.Add(Me.dgridReporteMov)
+        Me.Controls.Add(Me.txtTarjeta)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.cmbEmpresa)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtpfechaf)
         Me.Controls.Add(Me.dtpfechai)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frm_Movimientos"
-        Me.Text = "frm_Movimientos"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Movimientos"
+        CType(Me.dgridReporteMov, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -156,10 +185,13 @@ Partial Class frm_Movimientos
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents dtpfechaf As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpfechai As System.Windows.Forms.DateTimePicker
-    Friend WithEvents cmbEmpresa As System.Windows.Forms.ComboBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents txtTarjeta As System.Windows.Forms.TextBox
+    Friend WithEvents dgridReporteMov As System.Windows.Forms.DataGridView
+    Friend WithEvents btnGenerar As System.Windows.Forms.Button
+    Friend WithEvents fecha As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents monto As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents tarjetaVales As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
