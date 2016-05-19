@@ -76,4 +76,10 @@
             txtNumero.Enabled = True
         End If
     End Sub
+
+    Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
+        If (rbIndi.Checked) Then
+            ConnectionModule.connection.NonQueryCommand("select verificaEmpleado ('" & txtNombre.Text & "','" & txtNumero.Text & "','" & txtImporte.Text & "')")
+        End If
+    End Sub
 End Class
