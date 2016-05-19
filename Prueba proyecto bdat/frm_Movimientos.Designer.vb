@@ -143,6 +143,7 @@ Partial Class frm_Movimientos
         '
         Me.fecha.DataPropertyName = "fecha"
         Me.fecha.HeaderText = "Fecha del movimiento"
+        Me.fecha.MaxInputLength = 10
         Me.fecha.Name = "fecha"
         '
         'monto
