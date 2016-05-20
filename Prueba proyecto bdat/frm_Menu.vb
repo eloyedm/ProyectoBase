@@ -37,4 +37,9 @@
         Me.Hide()
         frm_Movimientos.Show()
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.Hide()
+        frm_Saldo.Show()
+    End Sub
 End Class

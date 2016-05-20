@@ -56,9 +56,10 @@ Partial Class frm_CatalogoDeEmpleado
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(480, 76)
+        Me.Label1.Location = New System.Drawing.Point(640, 94)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(58, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Número"
         '
@@ -70,87 +71,98 @@ Partial Class frm_CatalogoDeEmpleado
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(34, 76)
+        Me.GroupBox1.Location = New System.Drawing.Point(45, 94)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(389, 87)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(519, 107)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Nombre completo"
         '
         'txtApellidoM
         '
-        Me.txtApellidoM.Location = New System.Drawing.Point(277, 41)
+        Me.txtApellidoM.Location = New System.Drawing.Point(369, 50)
+        Me.txtApellidoM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtApellidoM.MaxLength = 50
         Me.txtApellidoM.Name = "txtApellidoM"
-        Me.txtApellidoM.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellidoM.Size = New System.Drawing.Size(132, 22)
         Me.txtApellidoM.TabIndex = 3
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(274, 25)
+        Me.Label4.Location = New System.Drawing.Point(365, 31)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(85, 13)
+        Me.Label4.Size = New System.Drawing.Size(114, 17)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Apellido materno"
         '
         'txtApellidoP
         '
-        Me.txtApellidoP.Location = New System.Drawing.Point(155, 41)
+        Me.txtApellidoP.Location = New System.Drawing.Point(207, 50)
+        Me.txtApellidoP.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtApellidoP.MaxLength = 50
         Me.txtApellidoP.Name = "txtApellidoP"
-        Me.txtApellidoP.Size = New System.Drawing.Size(100, 20)
+        Me.txtApellidoP.Size = New System.Drawing.Size(132, 22)
         Me.txtApellidoP.TabIndex = 2
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(152, 25)
+        Me.Label3.Location = New System.Drawing.Point(203, 31)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(83, 13)
+        Me.Label3.Size = New System.Drawing.Size(111, 17)
         Me.Label3.TabIndex = 10
         Me.Label3.Text = "Apellido paterno"
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(13, 41)
+        Me.txtNombre.Location = New System.Drawing.Point(17, 50)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombre.MaxLength = 50
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(115, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(152, 22)
         Me.txtNombre.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(10, 25)
+        Me.Label2.Location = New System.Drawing.Point(13, 31)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.Size = New System.Drawing.Size(58, 17)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Nombre"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(44, 170)
+        Me.Label5.Location = New System.Drawing.Point(59, 209)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(28, 13)
+        Me.Label5.Size = New System.Drawing.Size(35, 17)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "RFC"
         '
         'txtRFC
         '
-        Me.txtRFC.Location = New System.Drawing.Point(47, 186)
+        Me.txtRFC.Location = New System.Drawing.Point(63, 229)
+        Me.txtRFC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtRFC.MaxLength = 50
         Me.txtRFC.Name = "txtRFC"
-        Me.txtRFC.Size = New System.Drawing.Size(242, 20)
+        Me.txtRFC.Size = New System.Drawing.Size(321, 22)
         Me.txtRFC.TabIndex = 4
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(480, 120)
+        Me.Label6.Location = New System.Drawing.Point(640, 148)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(91, 13)
+        Me.Label6.Size = New System.Drawing.Size(122, 17)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Número de tarjeta"
         '
@@ -160,9 +172,10 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnAceptar.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnAceptar.Location = New System.Drawing.Point(573, 184)
+        Me.btnAceptar.Location = New System.Drawing.Point(764, 226)
+        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
+        Me.btnAceptar.Size = New System.Drawing.Size(100, 28)
         Me.btnAceptar.TabIndex = 5
         Me.btnAceptar.Text = "Agregar"
         Me.btnAceptar.UseVisualStyleBackColor = False
@@ -172,9 +185,10 @@ Partial Class frm_CatalogoDeEmpleado
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.GrayText
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.Control
-        Me.btnCancelar.Location = New System.Drawing.Point(483, 184)
+        Me.btnCancelar.Location = New System.Drawing.Point(644, 226)
+        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.Size = New System.Drawing.Size(100, 28)
         Me.btnCancelar.TabIndex = 6
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -183,9 +197,10 @@ Partial Class frm_CatalogoDeEmpleado
         '
         Me.dgrid_Empleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgrid_Empleado.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idEmpleado, Me.nombreEmpleado, Me.apellidoPaterno, Me.apellidoMaterno, Me.RFC, Me.tarjetaVales, Me.borrar})
-        Me.dgrid_Empleado.Location = New System.Drawing.Point(12, 233)
+        Me.dgrid_Empleado.Location = New System.Drawing.Point(16, 287)
+        Me.dgrid_Empleado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dgrid_Empleado.Name = "dgrid_Empleado"
-        Me.dgrid_Empleado.Size = New System.Drawing.Size(664, 261)
+        Me.dgrid_Empleado.Size = New System.Drawing.Size(885, 321)
         Me.dgrid_Empleado.TabIndex = 6
         Me.dgrid_Empleado.TabStop = False
         '
@@ -244,9 +259,10 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Label7.BackColor = System.Drawing.Color.Maroon
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label7.Location = New System.Drawing.Point(6, 17)
+        Me.Label7.Location = New System.Drawing.Point(8, 21)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(142, 25)
+        Me.Label7.Size = New System.Drawing.Size(176, 31)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Crono-Vales"
         '
@@ -255,17 +271,19 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Label8.BackColor = System.Drawing.Color.Maroon
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label8.Location = New System.Drawing.Point(-6, -3)
+        Me.Label8.Location = New System.Drawing.Point(-8, -4)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(694, 64)
+        Me.Label8.Size = New System.Drawing.Size(925, 78)
         Me.Label8.TabIndex = 16
         '
         'cmbEmpresa
         '
         Me.cmbEmpresa.FormattingEnabled = True
-        Me.cmbEmpresa.Location = New System.Drawing.Point(527, 21)
+        Me.cmbEmpresa.Location = New System.Drawing.Point(703, 26)
+        Me.cmbEmpresa.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbEmpresa.Name = "cmbEmpresa"
-        Me.cmbEmpresa.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEmpresa.Size = New System.Drawing.Size(160, 24)
         Me.cmbEmpresa.TabIndex = 18
         '
         'Label9
@@ -274,31 +292,34 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Label9.BackColor = System.Drawing.Color.Maroon
         Me.Label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(524, 5)
+        Me.Label9.Location = New System.Drawing.Point(699, 6)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(48, 13)
+        Me.Label9.Size = New System.Drawing.Size(64, 17)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Empresa"
         '
         'lblNumeroEmpleado
         '
-        Me.lblNumeroEmpleado.Location = New System.Drawing.Point(483, 94)
+        Me.lblNumeroEmpleado.Location = New System.Drawing.Point(644, 116)
+        Me.lblNumeroEmpleado.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNumeroEmpleado.Name = "lblNumeroEmpleado"
-        Me.lblNumeroEmpleado.Size = New System.Drawing.Size(100, 18)
+        Me.lblNumeroEmpleado.Size = New System.Drawing.Size(133, 22)
         Me.lblNumeroEmpleado.TabIndex = 20
         '
         'lblNumeroTarjeta
         '
-        Me.lblNumeroTarjeta.Location = New System.Drawing.Point(483, 138)
+        Me.lblNumeroTarjeta.Location = New System.Drawing.Point(644, 170)
+        Me.lblNumeroTarjeta.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblNumeroTarjeta.Name = "lblNumeroTarjeta"
-        Me.lblNumeroTarjeta.Size = New System.Drawing.Size(135, 18)
+        Me.lblNumeroTarjeta.Size = New System.Drawing.Size(180, 22)
         Me.lblNumeroTarjeta.TabIndex = 21
         '
         'frm_CatalogoDeEmpleado
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(684, 501)
+        Me.ClientSize = New System.Drawing.Size(912, 617)
         Me.Controls.Add(Me.lblNumeroTarjeta)
         Me.Controls.Add(Me.lblNumeroEmpleado)
         Me.Controls.Add(Me.Label9)
@@ -314,6 +335,7 @@ Partial Class frm_CatalogoDeEmpleado
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "frm_CatalogoDeEmpleado"
         Me.Text = "Empleados"
